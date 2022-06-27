@@ -5,4 +5,3 @@ metadata:
   namespace: template-k8s
 data:
   HTTP_PORT:
-  GRPC_PORT:
