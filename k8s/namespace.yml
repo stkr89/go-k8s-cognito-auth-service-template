@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: template-k8s
+  labels:
+    name: template-k8s

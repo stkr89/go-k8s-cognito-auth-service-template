@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: go-k8s-cognito-auth-microservice-template
+  namespace: template-k8s
+data:
+  HTTP_PORT:
+  GRPC_PORT:

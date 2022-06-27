@@ -1,2 +1,6 @@
 build:
-	docker build -t go-auth-service-template:latest .
+	docker build -t stkr89/go-k8s-cognito-auth-microservice-template:latest .
+
+build-push:
+	docker build -t stkr89/go-k8s-cognito-auth-microservice-template:latest .
+	docker push stkr89/go-k8s-cognito-auth-microservice-template:latest

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-k8s-cognito-auth-microservice-template
+  namespace: template-k8s
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: go-k8s-cognito-auth-microservice-template
+  template:
+    metadata:
+      labels:
+        app: go-k8s-cognito-auth-microservice-template
+    spec:
+      containers:
+        - name: go-k8s-cognito-auth-microservice-template
+          image: stkr89/go-k8s-cognito-auth-microservice-template:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9001
+          envFrom:
+            - secretRef:
+                name: go-k8s-cognito-auth-microservice-template
